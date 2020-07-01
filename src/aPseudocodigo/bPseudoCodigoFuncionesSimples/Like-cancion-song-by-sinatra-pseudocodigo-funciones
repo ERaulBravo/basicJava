@@ -1,0 +1,38 @@
+adicionarLikeCanción(){
+    verificarMenuInicio()
+    verificarPaginaDeCanciones()
+    seleccionarCancion()
+    verificarPantallaConsulta()
+    oprimirLikeCanción()
+    verificarLikeCancion()
+    salirPaginaConsulta()
+}
+verificarMenuInicio(){
+    esperarDespliegueMenuIncio()
+    seleccionarOpcionSongs()
+}
+verificarPaginaDeCanciones(){
+    esperarDespliegueTítuloPaginaCanciones()
+    esperarDespliegueListaCanciones()
+}
+seleccionarCancion(){
+    presionarTituloCancion()
+}
+verificarPantallaConsulta(){
+    esperarDespliegueLigaLike()
+    verificaDespliegueDatosCancion()
+    verificarLigaRegresoListaActiva()
+}
+oprimirLikeCanción(){
+    esperarLigaLikeActiva()
+    guardarNumerolike()
+    oprimirLigaLike()
+}
+verificarLikeCancion(){
+    verificarPaginaDeCanciones()
+    verificarNumeroLike()
+}
+salirPaginaConsulta(){
+    presionarLigaRegresoLista()
+    verificarPaginaDeCanciones()
+}
