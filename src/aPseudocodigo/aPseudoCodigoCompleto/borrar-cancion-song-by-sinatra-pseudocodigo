@@ -1,0 +1,41 @@
+BorrarCanción(){
+    verificarMenuInicio()
+    verificarPaginaDeCanciones()
+    seleccionarCancion()
+    verificarPantallaConsulta()
+    borrarCancion()
+    verificarMensajeBorrado()
+    verificarEliminaciónDeCanciónEnLista()
+}
+verificarMenuInicio(){
+    esperarDespliegueMenuIncio()
+    seleccionarOpcionSongs()
+}
+verificarPaginaDeCanciones(){
+    esperarDespliegueTítuloPaginaCanciones()
+    esperarDespliegueListaCanciones()
+}
+seleccionarCancion(){
+    presionarTituloCancion()
+}
+verificarPantallaConsulta(){
+    esperarDespliegueLigaLike()
+    verificaDespliegueDatosCancion()
+    verificarBotonDeleteThisSongActivo()
+}
+borrarCancion() {
+    guardarLigaDeCanción()
+    oprimirBotonDeleteThisSong()
+}
+verificarMensajeBorrado(){
+    esperarDespliegueMensajeBorradoExitoso()
+    esperarDespliegueDeLista()
+}
+verificarEliminaciónDeCanciónEnLista(){
+    obtenerLigaCanciónBorrada()
+    buscarCanciónPorLiga()
+    esperarMensajedeError()
+    verificarMensajedeError()
+    regresarPaginaAnterior()
+    verificarPaginaDeCanciones()
+}

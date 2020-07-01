@@ -1,0 +1,45 @@
+CrearCanción(){
+    verificarMenuInicio()
+    verificarPaginaDeCanciones()
+    verificarPaginaIngresoCanción()
+    seleccionarCreaciónCancion()
+    ingresarCanción()
+    verificarIngresoExitoso()
+    verificarIngresoEnLista()
+}
+verificarMenuInicio(){
+    esperarDespliegueMenuIncicio()
+    seleccionarOpcionSongs()
+}
+verificarPaginaDeCanciones(){
+    esperarDespliegueTítuloPaginaCanciones()
+}
+seleccionarCreaciónCancion(){
+    verificarLigaCreateANewSongActiva()
+    presionarLigaCreateANewSong()
+}
+verificarPaginaIngresoCanción(){
+    esperarDespliegueTítuloPaginaAdicionarCanción()
+    esperarDesplieguedeEtiquetas()
+    esperarActivacionCamposDeCaptura()
+    esperarActivaciónBotonGuardaCancion()
+}
+ingresarCanción(){
+    IngresarTitulo()
+    guardarTituloCancion()
+    IngresarDuración()
+    IngresarFecha()
+    IngresarLetra()
+    OprimirBotonGuardaCancion()
+}
+verificarIngresoExitoso(){
+    esperarDesplieguedeIngresoExitoso()
+    verificarDespliegueDatosCapturados()
+    esperarActivaciónLigaListaCanciones()
+}
+verificarIngresoEnLista(){
+    presionarLigaListaCanciones()
+    verificarPaginaDeCanciones()
+    obtenerTituloCancionGuardado()
+    verificarTituloCancionEnLista()
+}

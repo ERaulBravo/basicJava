@@ -1,0 +1,27 @@
+ConsultarCanción(){
+    verificarMenuInicio()
+    verificarPaginaDeCanciones()
+    seleccionarCancion()
+    verificarPantallaConsulta()
+    salirPaginaConsulta()
+}
+verificarMenuInicio(){
+    esperarDespliegueMenuIncio()
+    seleccionarOpcionSongs()
+}
+verificarPaginaDeCanciones(){
+    esperarDespliegueTítuloPaginaCanciones()
+    esperarDespliegueListaCanciones()
+}
+seleccionarCancion(){
+    presionarTituloCancion()
+}
+verificarPantallaConsulta(){
+    esperarDespliegueLigaLike()
+    verificaDespliegueDatosCancion()
+    verificarLigaRegresoListaActiva()
+}
+salirPaginaConsulta(){
+    presionarLigaRegresoLista()
+    verificarPaginaDeCanciones()
+}

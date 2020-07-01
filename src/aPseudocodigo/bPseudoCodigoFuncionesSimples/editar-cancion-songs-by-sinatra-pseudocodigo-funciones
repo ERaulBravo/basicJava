@@ -1,0 +1,48 @@
+EditarCanción(){
+    verificarMenuInicio()
+    verificarPaginaDeCanciones()
+    seleccionarCancion()
+    verificarPantallaConsulta()
+    editarCancion()
+    verificarPaginaDeEdicion()
+    modificarCancion()
+    verificarEdicionExitosa()
+    salirPaginaConsulta()
+}
+verificarMenuInicio(){
+    esperarDespliegueMenuIncio()
+    seleccionarOpcionSongs()
+}
+verificarPaginaDeCanciones(){
+    esperarDespliegueTítuloPaginaCanciones()
+    esperarDespliegueListaCanciones()
+}
+seleccionarCancion(){
+    presionarTituloCancion()
+}
+verificarPantallaConsulta(){
+    esperarDespliegueLigaLike()
+    verificaDespliegueDatosCancion()
+    verificarLigaEditThisSongActiva()
+}
+editarCancion(){
+    verificarLigaEditThisSongActiva()
+    oprimirLigaEdithThisSong()
+}
+verificarPaginaDeEdicion(){
+    verificarTituloPaginaEdición()
+    verificarCamposDeEdiciónActivos()
+    verificarBotonSaveSongActivo()
+}
+modificarCancion(){
+    modificarCamposDeEdicion()
+    oprimirBotonSaveSong()
+}
+verificarEdicionExitosa(){
+    verificarMensajeEdicionExitosa()
+    verificarCambiosEnCamposDeEdicion()
+}
+salirPaginaConsulta(){
+    presionarLigaRegresoLista()
+    verificarPaginaDeCanciones()
+}
